@@ -5,13 +5,12 @@
 
 
 .container{
-    width: 100%;
-    height: 100%;
+    padding-left: 5%;
 }
 
 .carta{
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: 90%;
     display: flex;
     align-items: center;
     position: absolute;
@@ -23,12 +22,14 @@
 .imagen{
     width: 75%;
     height: 75%;
-    margin-right: 5%;
+    margin-right: 15%;
 }
 
 .informacion p{
-    width: 60%;
+    width: 55%;
+    font-size: 20px;
 }
+
 
 .botton{
     border: none;
@@ -38,10 +39,15 @@
     color: white;
 }
 
+.informacion b{
+    font-size: 49px;
+  
+}
+
 @media screen and (min-width: 150px) and (max-width: 480px){
     .carta{
         width: 70%;
-        height: 60%;
+        height: 70%;
         display: block;
         align-items: center;
     }
@@ -58,13 +64,31 @@
         background: black;
         color: white;
     }
+
+    .informacion b{
+        font-size: 40px;
+    }
+
+    .informacion p{
+        width: 100%;
+        height: 80px;
+        font-size: 18px;
+    }
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 1184px){
     .carta{
         width: 80%;
-        height: 50%;
+        height: 60%;
+    }
+    .informacion p{
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .imagen{
+        margin-right: 8%;
     }
 }
 
